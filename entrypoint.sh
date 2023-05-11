@@ -1,6 +1,6 @@
 #!/bin/bash
 
-date
+date-foo-bar
 
 if [ $? -eq 0 ]
 then
