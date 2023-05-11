@@ -2,7 +2,11 @@
 
 date-foo-bar
 
-if [ $? -eq 0 ]
+status=$?
+
+date 
+
+if [ $status -eq 0 ]
 then
   exit 0
 else
