@@ -33,16 +33,15 @@ if [ -n "${INPUT_TOKEN}" ] ; then
     export FIREBASE_TOKEN="${INPUT_TOKEN}"
 fi
 
-firebase \
-        appdistribution:distribute \
-        "$INPUT_FILE" \
-        --app "$INPUT_APPID" \
-        --groups "$INPUT_GROUPS" \
-        --testers "$INPUT_TESTERS" \
-        ${RELEASE_NOTES:+ --release-notes "${RELEASE_NOTES}"} \
-        ${INPUT_RELEASENOTESFILE:+ --release-notes-file "${RELEASE_NOTES_FILE}"} \
-        $( (( $INPUT_DEBUG )) && printf %s '--debug' )
+date
 
 if [ -n "${INPUT_TOKEN}" ] ; then
     echo ${TOKEN_DEPRECATED_WARNING_MESSAGE}
+fi
+
+if [ $? -eq 0 ]
+then
+  exit 0
+else
+  exit 1
 fi
