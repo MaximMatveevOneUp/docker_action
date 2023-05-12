@@ -1,7 +1,5 @@
 #!/bin/bash
 
-date
-
-status = $firebase version
+status = $date
 
 exit $status
