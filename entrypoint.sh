@@ -3,7 +3,7 @@
 firebase \
         appdistribution:distribute \
 
-status=$?
+status = $?
 
 date 
 
