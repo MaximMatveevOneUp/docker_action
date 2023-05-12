@@ -2,7 +2,9 @@
 
 date
 
-status=$?
+firebase login
+
+status = $?
 
 date 
 
