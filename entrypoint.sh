@@ -2,6 +2,6 @@
 
 date
 
-status = $firebase login
+status = $firebase version
 
 exit $status
