@@ -2,10 +2,6 @@
 
 date
 
-firebase login
-
-status = $?
-
-date 
+status = $firebase login
 
 exit $status
