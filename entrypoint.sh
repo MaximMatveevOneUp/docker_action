@@ -3,8 +3,6 @@
 firebase \
         appdistribution:distribute \
 
-status = $?
-
-date 
+status=$?
 
 exit $status
