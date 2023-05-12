@@ -1,7 +1,6 @@
 #!/bin/bash
 
-firebase \
-        appdistribution:distribute \
+firebase
 
 status=$?
 
