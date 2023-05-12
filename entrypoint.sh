@@ -1,6 +1,6 @@
 #!/bin/bash
 
-date
+date_asd
 
 status=$?
 
