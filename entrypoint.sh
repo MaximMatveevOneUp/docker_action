@@ -1,6 +1,6 @@
 #!/bin/bash
 
 date 
-status = $date
+status = $?
 
 exit $status
